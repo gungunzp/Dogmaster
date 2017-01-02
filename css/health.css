@@ -689,6 +689,106 @@ textarea {
     padding-top: 40px;
 }
 
+/* ----------------- Alex G. 02.01.17 START ----------------- */
+
+.hamburger_menu {
+	position: absolute;
+/*	position: relative;*/
+	float: left;
+	width: 70px;
+	height: 70px;
+/*	background-color: #111;*/
+	top: 30px;
+	cursor: pointer;
+}
+
+.bars {
+	position: absolute;
+	width: 40px;
+	height: 35px;
+/*	background-color: #ccc;*/
+	top: 0;
+	left: 0;
+}
+
+.bar,
+.bar:before,
+.bar:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 5px;
+	background-color: #009933;
+	top: 16px;
+	left: 5px;
+	transition: all .3s;
+}
+
+.bar:before {
+	top: 9px;
+	left: 0;
+}
+
+.bar:after {
+	top: -9px;
+	left: 0;
+}
+
+.hamburger_menu:hover .bar {
+	background-color: transparent;
+}
+
+.hamburger_menu:hover .bar:before {
+	transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.hamburger_menu:hover .bar:after {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+ul.hamburger_menu_list {
+	position: absolute;
+	display: none;
+	min-width: 150px;
+	background-color: rgba(0, 153, 51, .9);
+	opacity: 0;
+	list-style: none;
+	top: 70px;
+	left: 0;
+	margin: 0;
+	padding: 5px;
+	transition: all .3s;
+}
+
+.hamburger_menu:hover ul.hamburger_menu_list {
+	display: block;
+	opacity: 1;
+}
+
+ul.hamburger_menu_list li a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+	padding: 5px 10px;
+	transition: all .3s;
+}
+
+ul.hamburger_menu_list li a:hover {
+	background-color: #fff;
+	color: #009933;
+}
+
+
+.desktop-center {
+	float: none;
+	display: inline-block;
+/*	text-align: center;*/
+}
+
+/* ----------------- Alex G. 02.01.17 END ----------------- */
+
 .click-to-call {
     float: right;
 }

@@ -91,3 +91,12 @@ if ($('#before_after').length) {
     });
 
 }
+
+
+/* Custom scrollbar 04.01.17 (http://manos.malihu.gr/jquery-custom-content-scroller) */
+
+    (function($){
+        $(window).on("load",function(){
+            $(".scroll_wrap").mCustomScrollbar();
+        });
+    })(jQuery);

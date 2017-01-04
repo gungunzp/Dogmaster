@@ -689,7 +689,7 @@ textarea {
     padding-top: 40px;
 }
 
-/* ----------------- Collapsing menu START ----------------- */
+/* ----------------- Collapsing menu START 03.01.17 ----------------- */
 .collapsing_menu {
 	position: relative;
 	top: 15px;
@@ -771,7 +771,13 @@ textarea {
 	float: none;
 	display: inline-block;
 }
-/* ----------------- Collapsing menu END ----------------- */
+/* ----------------- Collapsing menu END 03.01.17 ----------------- */
+
+/* Custom scrollbar 04.01.17 */
+.mCSB_inside>.mCSB_container {
+     margin-right: 0 !important; 
+}
+
 
 .click-to-call {
     float: right;

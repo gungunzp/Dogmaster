@@ -37,6 +37,8 @@ TABLE OF CONTENTS
 body,
 html {
     overflow-x: hidden;
+	/* Smooth scrolling on iPhone 26.01.17 */
+	-webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -772,12 +774,6 @@ textarea {
 	display: inline-block;
 }
 /* ----------------- Collapsing menu END 03.01.17 ----------------- */
-
-/* Custom scrollbar 04.01.17 */
-.mCSB_inside>.mCSB_container {
-     margin-right: 0 !important; 
-}
-
 
 .click-to-call {
     float: right;
